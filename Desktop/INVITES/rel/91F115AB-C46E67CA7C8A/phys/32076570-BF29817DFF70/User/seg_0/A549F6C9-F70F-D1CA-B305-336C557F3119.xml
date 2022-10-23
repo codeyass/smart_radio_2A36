@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="NOUSSEIBA" directorySegmentName="seg_0" id="A549F6C9-F70F-D1CA-B305-336C557F3119">
+<sourceConnName>Gestion_Invit%C3%A9s</sourceConnName>
+<sourceObjName>NOUSSEIBA</sourceObjName>
+<createdBy>21627</createdBy>
+<createdTime>2022-10-23 18:03:05 UTC</createdTime>
+<ownerDesignName>INVITES</ownerDesignName>
+<schemaObject>D0848DE9-073C-49DF-ADA1-9A1D5ECCE828</schemaObject>
+<privileges>UNLIMITED TABLESPACE</privileges>
+</UserOraclev10g>
