@@ -1,5 +1,5 @@
 #include "connexion.h"
-
+//test connexion
 connexion::connexion(){}
 
 bool connexion::createconnexion()
@@ -17,6 +17,5 @@ bool connexion::createconnexion()
 
 void connexion::closeconnexion()
 {
-
     db.close();
 }
