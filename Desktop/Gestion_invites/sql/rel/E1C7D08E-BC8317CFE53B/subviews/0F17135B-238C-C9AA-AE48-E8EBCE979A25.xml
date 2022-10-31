@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="Gestion_invites - SubView_1" id="0F17135B-238C-C9AA-AE48-E8EBCE979A25">
+<createdBy>21627</createdBy>
+<modifiedBy>21627</modifiedBy>
+<createdTime>2022-10-30 12:34:15 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="408DC89A-3268-D5CC-4D32-8607A272BD2F" otype="Table" vid="B87A6583-4BCA-377E-644F-6DCD4C2BCC3C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="20" y="20" width="246" height="192"/>
+</OView>
+</objectViews>
+</Diagram>

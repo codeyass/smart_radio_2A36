@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Gestion_invites" id="E1C7D08E-90A6-9BE8-89C1-BC8317CFE53B" mainViewID="BE76EE27-9AD5-51FE-D140-F0B6D5DD4E41">
+<createdBy>21627</createdBy>
+<createdTime>2022-10-30 12:34:15 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>
