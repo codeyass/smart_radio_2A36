@@ -4,6 +4,8 @@
 #include <QSqlQueryModel>
 #include <QSqlQuery>
 #include <QDate>
+//HEADER
+
 class INVITES
 {
 public:
