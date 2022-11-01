@@ -3,7 +3,11 @@
 #include <QtDebug>
 #include <QObject>
 
-INVITES::INVITES() {}
+INVITES::INVITES()
+{
+    MAIL_I="%.%@%.%";
+
+}
 INVITES::INVITES(int cin,QString nom,QString prenom,QString metier,int Num_tel,QDate dt,QString mail,int duree)
 {
     this->CIN_I=cin;
