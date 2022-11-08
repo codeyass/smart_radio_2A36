@@ -24,15 +24,19 @@ public:
 private slots:
 
 
-    void on_Ajouter_clicked();
+    void on_Ajouter_2_clicked();
 
 
 
-    void on_pushButton_supp_clicked();
+    void on_pushButton_supp_2_clicked();
 
-    void on_pushButton_a_clicked();
+   // void on_pushButton_a_clicked();
 
-    void on_pushButton_update_clicked();
+    void on_pushButton_update_2_clicked();
+
+    void on_Chercher_clicked();
+
+    void on_PDF_clicked();
 
 private:
     Ui::Dialog *ui;

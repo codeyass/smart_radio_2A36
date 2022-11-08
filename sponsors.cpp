@@ -131,3 +131,28 @@ bool Sponsors::modifier()
 
 }
 
+QSqlQueryModel* Sponsors::search_sponsor(QString  chaine_search,QString variable)
+{
+    QSqlQueryModel* model=new QSqlQueryModel();
+    QSqlQuery query;
+    if(variable=="ID_S")
+     {
+     model->setQuery("SELECT * FROM sponsors WHERE  (ID_S like '"+chaine_search+"%""')  ");
+     }
+    if(variable=="NOM_P")
+     {
+     model->setQuery("SELECT * FROM sponsors WHERE  (NOM_P like '"+chaine_search+"%""')  ");  //CHAINE ELI NEKTEB FEHA FEL LINE EDIT
+     }
+    if(variable=="TYPE")
+     {
+     model->setQuery("SELECT * FROM sponsors WHERE  (TYPE like '"+chaine_search+"%""')  ");
+     }
+
+
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID_S"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("NOM_P"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("TYPE"));
+
+
+        return  model;
+}

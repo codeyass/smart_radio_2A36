@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>IMG/smart_radio.png</file>
+        <file>IMG/Yellow Black Modern Podcast  Instagram Story.png</file>
+        <file>IMG/loginicon.png</file>
+        <file>IMG/Arrière-plan.png</file>
+        <file>IMG/search.jpg</file>
+        <file>IMG/pdf.jpg</file>
+    </qresource>
+</RCC>

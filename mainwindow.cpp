@@ -11,11 +11,11 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap pix("C:/Users/MSI/Desktop/Radio/IMG/smart_radio.png");
-   ui->label_pic->setPixmap(pix.scaled(400,300,Qt::KeepAspectRatio));
+    QPixmap pix(":/image/IMG/Yellow Black Modern Podcast  Instagram Story.png");
+   ui->label_pic->setPixmap(pix.scaled(500,500,Qt::KeepAspectRatio));
    ////////////////////////
-   //QPixmap pix1("C:/Users/MSI/Desktop/smartRadio/img/login.jpg");
-  //ui->log->setPixmap(pix1.scaled(100,100,Qt::KeepAspectRatio));
+   QPixmap pix1(":/image/IMG/Arrière-plan.png");
+  ui->login->setPixmap(pix1.scaled(100,100,Qt::KeepAspectRatio));
 
 
 

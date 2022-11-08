@@ -27,6 +27,7 @@ public:
     QSqlQueryModel* afficher();
     bool supprimer(int);
     bool modifier();
+    QSqlQueryModel* search_sponsor(QString ,QString);
 
 
 
