@@ -39,8 +39,8 @@ public:
     QSqlQueryModel* afficher();
     bool supprimer(int);
     bool modifier();
-    QSqlQueryModel* triedate();
-    QSqlQueryModel* rechercher();
+    QSqlQueryModel* tri(QString);
+    QSqlQueryModel* recherche(QString,QString);
 
 
 private:

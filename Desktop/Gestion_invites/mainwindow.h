@@ -25,15 +25,11 @@ private slots:
 
     void on_modifier_clicked();
 
-    //void on_quitter_clicked();
-
     void on_PDF_clicked();
 
-    void on_radioButton_clicked(); //tri
-
-    void on_pushButton_clicked();   //détri
-
     void on_chercher_clicked();
+
+    void on_button_tri_clicked();
 
 private:
     Ui::MainWindow *ui;

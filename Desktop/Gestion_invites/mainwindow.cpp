@@ -8,16 +8,16 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->afficher->setModel(I.afficher());
     ui->le_cin->setValidator(new QIntValidator(0,99999999,this));
-    //ui->le_cin_modif->setValidator(new QIntValidator(0,99999999,this));
     ui->num_tel->setValidator(new QIntValidator(0,99999999,this));
     ui->num_tel_modif->setValidator(new QIntValidator(0,99999999,this));
     ui->la_duree->setValidator(new QIntValidator(0,99,this));
     ui->la_duree_modif->setValidator(new QIntValidator(0,99,this));
-    ui->afficher->setModel(I.afficher());
     ui->cin_supp->setModel(I.afficher());
     ui->le_cin_modif->setModel(I.afficher());
-    ui->cin_cher->setModel(I.afficher());
+    //ui->cher_2->setModel(I.afficher());
+
 
 }
 
@@ -40,12 +40,12 @@ int DUREE_I=ui->la_duree->text().toInt();
 INVITES I(CIN_I,NOM_I,PRENOM_I,METIER_I,NUM_TEL_I,DATE_I,MAIL_I,DUREE_I);
 bool test=I.ajouter();
 if(test)
-{
-    ui->afficher->setModel(I.afficher());
+{       ui->afficher->setModel(I.afficher());
+
     QMessageBox::information(nullptr,QObject::tr("Ajout d'un invité"),QObject::tr("Ajout effectuée\n" "Click Cancel to quit"),QMessageBox::Cancel);
+    //ui->cher_2->setModel(I.afficher());
     ui->cin_supp->setModel(I.afficher());
     ui->le_cin_modif->setModel(I.afficher());
-    ui->cin_cher->setModel(I.afficher());
     ui->le_cin->clear();
     ui->le_nom->clear();
     ui->le_prenom->clear();
@@ -68,8 +68,8 @@ if(test)
 {
     ui->afficher->setModel(I.afficher());
     QMessageBox::information(nullptr,QObject::tr("Suppression d'un invité"),QObject::tr("Suppression effectuée\n" "Click Cancel to quit"),QMessageBox::Cancel);
+    //ui->cher_2->setModel(I.afficher());
     ui->le_cin_modif->setModel(I.afficher());
-    ui->cin_cher->setModel(I.afficher());
     ui->cin_supp->setModel(I.afficher());
 
 
@@ -96,12 +96,13 @@ void MainWindow::on_modifier_clicked()
             ui->le_cin_modif->setModel(I.afficher());
             ui->afficher->setModel(I.afficher());
             QMessageBox::information(nullptr,QObject::tr("Modification d'un invité"),QObject::tr("Modification effectuée\n" "Click Cancel to quit"),QMessageBox::Cancel);
+            //ui->cher_2->setModel(I.afficher());
             ui->le_cin_modif->setModel(I.afficher());
             ui->num_tel_modif->clear();
             ui->la_date_modif->clear();
             ui->mail_modif->clear();
             ui->la_duree_modif->clear();
-            ui->cin_cher->setModel(I.afficher());
+
         }
         else
             QMessageBox::critical(nullptr,QObject::tr("Modification d'un invité"),QObject::tr("Modification non effectuée\n" "Click Cancel to quit"),QMessageBox::Cancel);
@@ -188,34 +189,86 @@ QString duree = QString::number(DUREE_I);
       painter.end();
 }
 
-void MainWindow::on_radioButton_clicked()
-{
-    ui->afficher->setModel(I.triedate());
-
-}
-
-void MainWindow::on_pushButton_clicked()
-{
-     ui->afficher->setModel(I.afficher());
-}
 
 void MainWindow::on_chercher_clicked()
 {
-    int CIN_I=ui->cin_cher->currentText().toInt();
+    QString variable;
+                if(ui->cher->currentText()=="CIN")
+                {
+                 variable="CIN_I";
 
-    bool test=I.rechercher();
-    if(test)
-    {
-        ui->afficher->setModel(I.afficher());
-        //QMessageBox::information(nullptr,QObject::tr("Chercher d'un invité"),QObject::tr(" invite trouvé\n" "Click Cancel to quit"),QMessageBox::Cancel);
-       // ui->cin_cher->setModel(CIN_I.afficher);
-        ui->le_cin_modif->setModel(I.afficher());
-        ui->cin_cher->setModel(I.afficher());
-        ui->cin_supp->setModel(I.afficher());
+                }
+                if(ui->cher->currentText()=="NOM")
+                {
+                 variable="NOM_I";
+
+                }
+                if(ui->cher->currentText()=="PRENOM")
+                {
+                 variable="PRENOM_I";
 
 
-    }
-    else
-        QMessageBox::critical(nullptr,QObject::tr("chercher d'un invité"),QObject::tr("invite non trouvé\n" "Click Cancel to quit"),QMessageBox::Cancel);
+                }
+                if(ui->cher->currentText()=="DATE")
+                {
+                 variable="DATE_I";
 
+
+                }
+                if(ui->cher->currentText()=="METIER")
+                {
+                 variable="METIER_I";
+
+
+                }
+
+
+                INVITES I;
+                QSqlQueryModel *model =I.recherche(ui->cher_2->currentText(),variable);
+                ui->afficher->setModel(model);
+                //ui->cher_2->setModel(I.afficher());
+
+                ui->lineedit_ch->clear();
+
+}
+
+
+void MainWindow::on_button_tri_clicked()
+{
+    QString variable;
+                if(ui->tri->currentText()=="CIN")
+                {
+                 variable="CIN_I";
+                }
+                if(ui->tri->currentText()=="NOM")
+                {
+                 variable="NOM_I";
+                }
+                if(ui->tri->currentText()=="PRENOM")
+                {
+                 variable="PRENOM_I";
+                }
+                if(ui->tri->currentText()=="METIER")
+                {
+                 variable="METIER_I";
+                }
+                if(ui->tri->currentText()=="DATE")
+                {
+                 variable="DATE_I";
+                }
+                if(ui->tri->currentText()=="MAIL")
+                {
+                 variable="MAIL_I";
+                }
+                if(ui->tri->currentText()=="NUM_TEL")
+                {
+                 variable="NUM_TEL_I";
+                }
+                if(ui->tri->currentText()=="DUREE")
+                {
+                 variable="DUREE_I";
+                }
+                INVITES I;
+                QSqlQueryModel *model =I.tri(variable);
+                ui->afficher->setModel(model);
 }

@@ -104,33 +104,90 @@ bool INVITES::modifier()
 }
 
 
-QSqlQueryModel*  INVITES:: triedate()
+QSqlQueryModel*  INVITES:: tri(QString variable)
 {
 
-QSqlQueryModel* model =new QSqlQueryModel();
+    QSqlQueryModel* model=new QSqlQueryModel();
+    QSqlQuery query;
+    if(variable=="CIN_I")
+     {
+     model->setQuery("SELECT * FROM INVITES order by CIN_I  ");
+     }
+    if(variable=="NOM_I")
+     {
+     model->setQuery("SELECT * FROM INVITES order by NOM_I ");
+     }
+    if(variable=="PRENOM_I")
+    {
+    model->setQuery("SELECT * FROM INVITES order by PRENOM_I ");
+    }
+    if(variable=="METIER_I")
+     {
+     model->setQuery("SELECT * FROM INVITES order by METIER_I ");
+     }
+    if(variable=="DATE_I")
+     {
+     model->setQuery("SELECT * FROM INVITES order by DATE_I  ");
+     }
+    if(variable=="MAIL_I")
+     {
+     model->setQuery("SELECT * FROM INVITES order by MAIL_I  ");
+     }
+    if(variable=="NUM_TEL_I")
+     {
+     model->setQuery("SELECT * FROM INVITES order by NUM_TEL_I ");
+     }
+    if(variable=="DUREE_I")
+     {
+     model->setQuery("SELECT * FROM INVITES order by DUREE_I  ");
+     }
 
-model->setQuery ("select * from INVITES order by DATE_I");
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("CIN"));
+    model->setHeaderData(1,Qt::Horizontal,QObject::tr("NOM"));
+    model->setHeaderData(2,Qt::Horizontal,QObject::tr("PRENOM"));
+    model->setHeaderData(3,Qt::Horizontal,QObject::tr("METIER"));
+    model->setHeaderData(4,Qt::Horizontal,QObject::tr("DATE"));
+    model->setHeaderData(5,Qt::Horizontal,QObject::tr("MAIL"));
+    model->setHeaderData(6,Qt::Horizontal,QObject::tr("NUM_TEL"));
+    model->setHeaderData(7,Qt::Horizontal,QObject::tr("DUREE"));
 
-model->setHeaderData(0,Qt::Horizontal,QObject::tr("CIN"));
-model->setHeaderData(1,Qt::Horizontal,QObject::tr("NOM"));
-model->setHeaderData(2,Qt::Horizontal,QObject::tr("PRENOM"));
-model->setHeaderData(3,Qt::Horizontal,QObject::tr("METIER"));
-model->setHeaderData(4,Qt::Horizontal,QObject::tr("DATE"));
-model->setHeaderData(5,Qt::Horizontal,QObject::tr("MAIL"));
-model->setHeaderData(6,Qt::Horizontal,QObject::tr("NUM_TEL"));
-model->setHeaderData(7,Qt::Horizontal,QObject::tr("DUREE"));
 return model;
 }
 
+QSqlQueryModel* INVITES::recherche(QString chaine_search,QString variable)
 
-
-
-QSqlQueryModel* INVITES::rechercher()
 {
-    QSqlQueryModel* model=new::QSqlQueryModel;
-               model->setQuery("select * from  INVITES where CIN_I=:CIN_I");
-               return model;
+    QSqlQueryModel* model=new QSqlQueryModel();
+    QSqlQuery query;
+    if(variable=="CIN_I")
+     {
+     model->setQuery("SELECT * FROM INVITES WHERE  (CIN_I like '"+chaine_search+"%""')  ");
+     }
+    if(variable=="NOM_I")
+     {
+     model->setQuery("SELECT * FROM INVITES WHERE  (NOM_I like '"+chaine_search+"%""')  ");  //CHAINE ELI NEKTEB FEHA FEL LINE EDIT
+     }
+    if(variable=="PRENOM_I")
+     {
+     model->setQuery("SELECT * FROM INVITES WHERE  (PRENOM_I like '"+chaine_search+"%""')  ");  //CHAINE ELI NEKTEB FEHA FEL LINE EDIT
+     }
+    if(variable=="DATE_I")
+     {
+     model->setQuery("SELECT * FROM INVITES WHERE  (DATE_I like '"+chaine_search+"%""')  ");
+     }
+    if(variable=="METIER_I")
+     {
+     model->setQuery("SELECT * FROM INVITES WHERE  (METIER_I like '"+chaine_search+"%""')  ");
+     }
 
+
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("CIN"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("NOM"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("PRENOM"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("DATE"));
+    model->setHeaderData(4, Qt::Horizontal, QObject::tr("METIER"));
+
+
+        return  model;
 }
-
 

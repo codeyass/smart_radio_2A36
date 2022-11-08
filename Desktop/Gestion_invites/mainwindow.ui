@@ -6,21 +6,27 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1258</width>
-    <height>721</height>
+    <width>1238</width>
+    <height>698</height>
    </rect>
   </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>0</y>
-      <width>1231</width>
-      <height>631</height>
+      <y>-30</y>
+      <width>1341</width>
+      <height>671</height>
      </rect>
     </property>
     <property name="font">
@@ -35,6 +41,9 @@
     <property name="currentIndex">
      <number>0</number>
     </property>
+    <property name="elideMode">
+     <enum>Qt::ElideMiddle</enum>
+    </property>
     <widget class="QWidget" name="test">
      <attribute name="title">
       <string>Gestion Invités</string>
@@ -42,8 +51,8 @@
      <widget class="QGroupBox" name="Update">
       <property name="geometry">
        <rect>
-        <x>830</x>
-        <y>30</y>
+        <x>780</x>
+        <y>40</y>
         <width>381</width>
         <height>331</height>
        </rect>
@@ -267,8 +276,8 @@ border:0.5px solid;</string>
      <widget class="QLabel" name="label_25">
       <property name="geometry">
        <rect>
-        <x>400</x>
-        <y>10</y>
+        <x>820</x>
+        <y>0</y>
         <width>421</width>
         <height>51</height>
        </rect>
@@ -293,8 +302,8 @@ border:0.5px solid;</string>
       <property name="geometry">
        <rect>
         <x>400</x>
-        <y>110</y>
-        <width>411</width>
+        <y>20</y>
+        <width>381</width>
         <height>121</height>
        </rect>
       </property>
@@ -365,8 +374,8 @@ border:0.5px solid;</string>
      <widget class="QTableView" name="afficher">
       <property name="geometry">
        <rect>
-        <x>400</x>
-        <y>370</y>
+        <x>380</x>
+        <y>380</y>
         <width>811</width>
         <height>201</height>
        </rect>
@@ -384,10 +393,10 @@ border:0.5px solid;
      <widget class="QLabel" name="label_14">
       <property name="geometry">
        <rect>
-        <x>-10</x>
+        <x>0</x>
         <y>0</y>
-        <width>1231</width>
-        <height>591</height>
+        <width>1351</width>
+        <height>611</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -403,8 +412,8 @@ border:0.5px solid;</string>
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>40</y>
-        <width>391</width>
+        <y>10</y>
+        <width>371</width>
         <height>481</height>
        </rect>
       </property>
@@ -720,119 +729,6 @@ border-radius:15px;
 border:0.5px solid;</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="PDF">
-       <property name="geometry">
-        <rect>
-         <x>80</x>
-         <y>430</y>
-         <width>91</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="palette">
-        <palette>
-         <active>
-          <colorrole role="Button">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Base">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Window">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-         </active>
-         <inactive>
-          <colorrole role="Button">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Base">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Window">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-         </inactive>
-         <disabled>
-          <colorrole role="Button">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Base">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Window">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-         </disabled>
-        </palette>
-       </property>
-       <property name="cursor">
-        <cursorShape>OpenHandCursor</cursorShape>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:	orange;
-border-radius:15px;
-border:0.5px solid;
-</string>
-       </property>
-       <property name="text">
-        <string>PDF</string>
-       </property>
-      </widget>
       <widget class="QPushButton" name="ajouter">
        <property name="geometry">
         <rect>
@@ -946,867 +842,10 @@ border:0.5px solid;
         <string>Ajouter</string>
        </property>
       </widget>
-     </widget>
-     <widget class="QGroupBox" name="chercher_invite">
-      <property name="geometry">
-       <rect>
-        <x>400</x>
-        <y>240</y>
-        <width>411</width>
-        <height>121</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Chercher un invité</string>
-      </property>
-      <widget class="QPushButton" name="chercher">
+      <widget class="QPushButton" name="PDF">
        <property name="geometry">
         <rect>
-         <x>150</x>
-         <y>80</y>
-         <width>101</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="cursor">
-        <cursorShape>OpenHandCursor</cursorShape>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:	orange;
-border-radius:15px;
-border:0.5px solid;
-</string>
-       </property>
-       <property name="text">
-        <string>Chercher</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_le_cin_cher">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>40</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>CIN</string>
-       </property>
-      </widget>
-      <widget class="QComboBox" name="cin_cher">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>40</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QPushButton" name="pushButton">
-      <property name="geometry">
-       <rect>
-        <x>250</x>
-        <y>530</y>
-        <width>112</width>
-        <height>34</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>retri</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButton">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>540</y>
-        <width>120</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>TRI</string>
-      </property>
-     </widget>
-     <zorder>label_14</zorder>
-     <zorder>Update</zorder>
-     <zorder>label_25</zorder>
-     <zorder>eliminer_invit</zorder>
-     <zorder>afficher</zorder>
-     <zorder>nouveau_invit</zorder>
-     <zorder>chercher_invite</zorder>
-     <zorder>pushButton</zorder>
-     <zorder>radioButton</zorder>
-    </widget>
-    <widget class="QWidget" name="widget">
-     <attribute name="title">
-      <string>Page</string>
-     </attribute>
-     <widget class="QGroupBox" name="Update_3">
-      <property name="geometry">
-       <rect>
-        <x>830</x>
-        <y>10</y>
-        <width>381</width>
-        <height>331</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Modifier</string>
-      </property>
-      <widget class="QPushButton" name="modifier_3">
-       <property name="geometry">
-        <rect>
-         <x>130</x>
-         <y>280</y>
-         <width>101</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="cursor">
-        <cursorShape>OpenHandCursor</cursorShape>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:	orange;
-border-radius:15px;
-border:0.5px solid;
-</string>
-       </property>
-       <property name="text">
-        <string>Modifier</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_DUREE_MODIF_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>140</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>DUREE</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="mail_modif_3">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>240</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_NUM_TEL_MODIF_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>190</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>NUM_TEL</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="la_duree_modif_3">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>140</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_MAIL_MODIF_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>240</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>MAIL</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="num_tel_modif_3">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>190</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_CIN_MODIF_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>40</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>CIN</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_DATE_MODIF_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>90</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>DATE</string>
-       </property>
-      </widget>
-      <widget class="QDateEdit" name="la_date_modif_3">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>90</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-      <widget class="QComboBox" name="le_cin_modif_3">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>40</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QPushButton" name="pushButton_3">
-      <property name="geometry">
-       <rect>
-        <x>250</x>
-        <y>510</y>
-        <width>112</width>
-        <height>34</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>retri</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_27">
-      <property name="geometry">
-       <rect>
-        <x>400</x>
-        <y>-10</y>
-        <width>421</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Algerian</family>
-        <pointsize>19</pointsize>
-       </font>
-      </property>
-      <property name="cursor">
-       <cursorShape>OpenHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string>        Gestion Invités</string>
-      </property>
-     </widget>
-     <widget class="QGroupBox" name="chercher_invite_3">
-      <property name="geometry">
-       <rect>
-        <x>400</x>
-        <y>220</y>
-        <width>411</width>
-        <height>121</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Chercher un invité</string>
-      </property>
-      <widget class="QPushButton" name="chercher_3">
-       <property name="geometry">
-        <rect>
-         <x>150</x>
-         <y>80</y>
-         <width>101</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="cursor">
-        <cursorShape>OpenHandCursor</cursorShape>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:	orange;
-border-radius:15px;
-border:0.5px solid;
-</string>
-       </property>
-       <property name="text">
-        <string>Chercher</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_le_cin_cher_3">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>40</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>CIN</string>
-       </property>
-      </widget>
-      <widget class="QComboBox" name="cin_cher_3">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>40</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QGroupBox" name="eliminer_invit_3">
-      <property name="geometry">
-       <rect>
-        <x>400</x>
-        <y>90</y>
-        <width>411</width>
-        <height>121</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Eliminer un invité</string>
-      </property>
-      <widget class="QPushButton" name="supprimer_3">
-       <property name="geometry">
-        <rect>
-         <x>150</x>
-         <y>80</y>
-         <width>101</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="cursor">
-        <cursorShape>OpenHandCursor</cursorShape>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:	orange;
-border-radius:15px;
-border:0.5px solid;
-</string>
-       </property>
-       <property name="text">
-        <string>Eliminer</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_le_cin_supp_3">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>40</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>CIN</string>
-       </property>
-      </widget>
-      <widget class="QComboBox" name="cin_supp_3">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>40</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QRadioButton" name="radioButton_3">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>520</y>
-        <width>120</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>TRI</string>
-      </property>
-     </widget>
-     <widget class="QGroupBox" name="nouveau_invit_3">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>20</y>
-        <width>391</width>
-        <height>481</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="title">
-       <string>Nouveau Invité</string>
-      </property>
-      <widget class="QLabel" name="label_PRENOM_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>140</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>PRENOM</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="le_prenom_3">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>140</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="le_metier_3">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>190</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_METIER_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>190</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>METIER</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_DATE_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>240</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>DATE</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="le_nom_3">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>90</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_NOM_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>90</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>NOM</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_CIN_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>40</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>CIN</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="le_cin_3">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>40</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="mail_3">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>290</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_MAIL_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>290</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>MAIL</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="la_duree_3">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>390</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_NUM_TEL_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>340</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>NUM_TEL</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_DUREE_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>390</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:khaki;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-       <property name="text">
-        <string>DUREE</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="num_tel_3">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>340</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-      <widget class="QDateEdit" name="la_date_3">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>240</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:snow;
-border-radius:15px;
-border:0.5px solid;</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="PDF_3">
-       <property name="geometry">
-        <rect>
-         <x>80</x>
+         <x>110</x>
          <y>430</y>
          <width>91</width>
          <height>31</height>
@@ -1916,105 +955,27 @@ border:0.5px solid;
         <string>PDF</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="ajouter_3">
+     </widget>
+     <widget class="QGroupBox" name="chercher_invite">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>160</y>
+        <width>391</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Chercher un invité</string>
+      </property>
+      <widget class="QPushButton" name="chercher">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>430</y>
-         <width>91</width>
+         <x>150</x>
+         <y>80</y>
+         <width>101</width>
          <height>31</height>
         </rect>
-       </property>
-       <property name="palette">
-        <palette>
-         <active>
-          <colorrole role="Button">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Base">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Window">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-         </active>
-         <inactive>
-          <colorrole role="Button">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Base">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Window">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-         </inactive>
-         <disabled>
-          <colorrole role="Button">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Base">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Window">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>165</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-         </disabled>
-        </palette>
        </property>
        <property name="cursor">
         <cursorShape>OpenHandCursor</cursorShape>
@@ -2026,29 +987,179 @@ border:0.5px solid;
 </string>
        </property>
        <property name="text">
-        <string>Ajouter</string>
+        <string>Chercher</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cher">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:snow;
+border-radius:15px;
+border:0.5px solid;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>CIN</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NOM</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PRENOM</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DATE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>METIER</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="cher_2">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>40</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:snow;
+border-radius:15px;
+border:0.5px solid;</string>
        </property>
       </widget>
      </widget>
-     <widget class="QTableView" name="afficher_3">
+     <widget class="QGroupBox" name="chercher_invite_2">
       <property name="geometry">
        <rect>
-        <x>400</x>
-        <y>350</y>
-        <width>811</width>
-        <height>201</height>
+        <x>410</x>
+        <y>290</y>
+        <width>381</width>
+        <height>91</height>
        </rect>
       </property>
-      <property name="cursor" stdset="0">
-       <cursorShape>PointingHandCursor</cursorShape>
+      <property name="title">
+       <string>Tri des invités</string>
       </property>
-      <property name="styleSheet">
-       <string notr="true">background-color:khaki;
+      <widget class="QComboBox" name="tri">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:snow;
+border-radius:15px;
+border:0.5px solid;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>CIN</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NOM</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PRENOM</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>METIER</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DATE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>MAIL</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NUM_TEL</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DUREE</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="button_tri">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>40</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:	orange;
 border-radius:15px;
 border:0.5px solid;
 </string>
+       </property>
+       <property name="text">
+        <string>TRI</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="lineedit_ch">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>500</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:snow;
+border-radius:15px;
+border:0.5px solid;</string>
       </property>
      </widget>
+     <zorder>label_14</zorder>
+     <zorder>Update</zorder>
+     <zorder>label_25</zorder>
+     <zorder>eliminer_invit</zorder>
+     <zorder>afficher</zorder>
+     <zorder>nouveau_invit</zorder>
+     <zorder>chercher_invite</zorder>
+     <zorder>chercher_invite_2</zorder>
+     <zorder>lineedit_ch</zorder>
     </widget>
    </widget>
   </widget>
@@ -2057,7 +1168,7 @@ border:0.5px solid;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1258</width>
+     <width>1238</width>
      <height>30</height>
     </rect>
    </property>
