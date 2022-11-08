@@ -3,7 +3,11 @@
 #include <QtDebug>
 #include <QObject>
 
-INVITES::INVITES() {}
+INVITES::INVITES()
+{
+    MAIL_I="%.%@%.%";
+
+}
 INVITES::INVITES(int cin,QString nom,QString prenom,QString metier,int Num_tel,QDate dt,QString mail,int duree)
 {
     this->CIN_I=cin;
@@ -58,7 +62,7 @@ bool INVITES::ajouter()
 QSqlQueryModel* INVITES::afficher()
 {
     QSqlQueryModel* model=new QSqlQueryModel();
-    model->setQuery(" SELECT* from INVITES");
+    model->setQuery(" SELECT * from INVITES");
     model->setHeaderData(0,Qt::Horizontal,QObject::tr("CIN"));
     model->setHeaderData(1,Qt::Horizontal,QObject::tr("NOM"));
     model->setHeaderData(2,Qt::Horizontal,QObject::tr("PRENOM"));
@@ -82,16 +86,51 @@ bool INVITES::supprimer(int CIN_I)
 
 bool INVITES::modifier()
 {
-    QSqlQuery query;
-    QString CIN_I_string=QString::number(CIN_I);
-    QString DUREE_I_string=QString::number(DUREE_I);
-    query.prepare("update INVITES set DATE_I=:DATE_I, DUREE_I= :DUREE_I where CIN_I=:CIN_I");
-    query.bindValue(":CIN_I",CIN_I_string);
-    query.bindValue(":DATE_I",DATE_I);
-    query.bindValue(":DUREE_I",DUREE_I_string);
-   return query.exec();
+
+        QSqlQuery query;
+        QString CIN_I_string=QString::number(CIN_I);
+        QString DUREE_I_string=QString::number(DUREE_I);
+        QString NUM_TEL_I_string=QString::number(NUM_TEL_I);
+        query.prepare("update INVITES set DATE_I=:DATE_I, DUREE_I= :DUREE_I , MAIL_I= :MAIL_I , NUM_TEL_I= :NUM_TEL_I where CIN_I=:CIN_I");
+        query.bindValue(":CIN_I",CIN_I_string);
+        query.bindValue(":DATE_I",DATE_I);
+        query.bindValue(":DUREE_I",DUREE_I_string);
+        query.bindValue(":MAIL_I",MAIL_I);
+        query.bindValue(":NUM_TEL_I",NUM_TEL_I_string);
+       return query.exec();
+
+
 
 }
 
+
+QSqlQueryModel*  INVITES:: triedate()
+{
+
+QSqlQueryModel* model =new QSqlQueryModel();
+
+model->setQuery ("select * from INVITES order by DATE_I");
+
+model->setHeaderData(0,Qt::Horizontal,QObject::tr("CIN"));
+model->setHeaderData(1,Qt::Horizontal,QObject::tr("NOM"));
+model->setHeaderData(2,Qt::Horizontal,QObject::tr("PRENOM"));
+model->setHeaderData(3,Qt::Horizontal,QObject::tr("METIER"));
+model->setHeaderData(4,Qt::Horizontal,QObject::tr("DATE"));
+model->setHeaderData(5,Qt::Horizontal,QObject::tr("MAIL"));
+model->setHeaderData(6,Qt::Horizontal,QObject::tr("NUM_TEL"));
+model->setHeaderData(7,Qt::Horizontal,QObject::tr("DUREE"));
+return model;
+}
+
+
+
+
+QSqlQueryModel* INVITES::rechercher()
+{
+    QSqlQueryModel* model=new::QSqlQueryModel;
+               model->setQuery("select * from  INVITES where CIN_I=:CIN_I");
+               return model;
+
+}
 
 

@@ -2,7 +2,10 @@
 #define MAINWINDOW_H
 #include "INVITES.h"
 #include <QMainWindow>
-
+#include <QPainter>
+#include <QPrinter>
+#include <QPrintPreviewDialog>
+#include <QTextEdit>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -22,11 +25,15 @@ private slots:
 
     void on_modifier_clicked();
 
-    void on_quitter_ajout_clicked();
+    //void on_quitter_clicked();
 
-    void on_quitter_supp_clicked();
+    void on_PDF_clicked();
 
-    void on_quitter_modif_clicked();
+    void on_radioButton_clicked(); //tri
+
+    void on_pushButton_clicked();   //détri
+
+    void on_chercher_clicked();
 
 private:
     Ui::MainWindow *ui;

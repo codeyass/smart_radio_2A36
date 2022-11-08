@@ -4,6 +4,8 @@
 #include <QSqlQueryModel>
 #include <QSqlQuery>
 #include <QDate>
+//HEADER
+
 class INVITES
 {
 public:
@@ -37,7 +39,9 @@ public:
     QSqlQueryModel* afficher();
     bool supprimer(int);
     bool modifier();
-    //bool quitter_ajout();
+    QSqlQueryModel* triedate();
+    QSqlQueryModel* rechercher();
+
 
 private:
     int CIN_I;
