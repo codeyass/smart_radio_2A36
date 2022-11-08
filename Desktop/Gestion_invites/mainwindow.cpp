@@ -134,7 +134,7 @@ QString duree = QString::number(DUREE_I);
 
 
       printer.setOutputFormat(QPrinter::PdfFormat);
-      printer.setOutputFileName("C:/Users/21627/Desktop/test.pdf");
+      printer.setOutputFileName("C:/Users/21627/Desktop/Gestion_invites/test.pdf");
       QPainter painter;
       if (! painter.begin(&printer))
       { // failed to open file
