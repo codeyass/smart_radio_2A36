@@ -6,6 +6,7 @@
 #include<QObject>
 
 
+
 Sponsors::Sponsors()
 {
 ID_S=0;
@@ -83,26 +84,40 @@ bool Sponsors::ajouter()
              return  query.exec();
 }
 
-bool Sponsors::supprimer(int ID_S)
+/*bool Sponsors::supprimer(int ID_S)
 {
     QSqlQuery query;
-          //QString id_string=QString::number(ID_S);
+
           query.prepare("Delete from sponsors where ID_S=:ID_S");
-          //query.bindValue(0, id_string);
+
           query.bindValue(0, ID_S);
-          //query.bindValue(": ID_S", id_string);
+
           return  query.exec();
 }
+*/
+
+
+bool Sponsors::supprimer(int selected){
+
+    QSqlQuery query;
+    query.prepare("Delete from sponsors where ID_S =: ID_S ");
+    query.bindValue(0, selected);
+    return    query.exec();
+
+
+}
+
+
 
 QSqlQueryModel * Sponsors::afficher()
 {
-    QSqlQueryModel *model = new QSqlQueryModel;
-             model->setQuery("SELECT*  FROM sponsors");
+    QSqlQueryModel *model = new QSqlQueryModel();
+
+             model->setQuery("SELECT *  FROM sponsors");
              model->setHeaderData(0, Qt::Horizontal, QObject::tr("identenfiant"));
              model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
               model->setHeaderData(2, Qt::Horizontal, QObject::tr("Type"));
                model->setHeaderData(3, Qt::Horizontal, QObject::tr("Periode"));
-                model->setHeaderData(4, Qt::Horizontal, QObject::tr("Prix"));
 
 
         return model;
@@ -156,3 +171,53 @@ QSqlQueryModel* Sponsors::search_sponsor(QString  chaine_search,QString variable
 
         return  model;
 }
+
+
+
+QSqlQueryModel*  Sponsors:: trier(QString variable)
+{
+
+QSqlQueryModel* model =new QSqlQueryModel();
+QSqlQuery query;
+
+
+
+if(variable=="ID_S")
+ {
+ model->setQuery("SELECT * FROM sponsors order by ID_S  ");
+ }
+if(variable=="NOM_P")
+ {
+ model->setQuery("SELECT * FROM sponsors order by NOM_P  ");  //CHAINE ELI NEKTEB FEHA FEL LINE EDIT
+ }
+if(variable=="TYPE")
+ {
+ model->setQuery("SELECT * FROM sponsors order by TYPE  ");
+ }
+
+if(variable=="PERIODE")
+ {
+ model->setQuery("SELECT * FROM sponsors order by PERIODE  ");
+ }
+
+if(variable=="PRIX")
+ {
+ model->setQuery("SELECT * FROM sponsors order by PRIX  ");
+ }
+
+
+
+model->setHeaderData(0,Qt::Horizontal,QObject::tr("id sponsor"));
+model->setHeaderData(1,Qt::Horizontal,QObject::tr("nom partenaire"));
+model->setHeaderData(2,Qt::Horizontal,QObject::tr("Type"));
+model->setHeaderData(3,Qt::Horizontal,QObject::tr("PERIODE"));
+model->setHeaderData(4,Qt::Horizontal,QObject::tr("PRIX"));
+
+return model;
+}
+
+
+
+
+
+

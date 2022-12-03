@@ -28,9 +28,9 @@ public:
     bool supprimer(int);
     bool modifier();
     QSqlQueryModel* search_sponsor(QString ,QString);
+    QSqlQueryModel*   trier(QString);
 
-
-
+bool afficher_image(QString);
 
 private:
 
