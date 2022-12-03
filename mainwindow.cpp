@@ -44,7 +44,7 @@ MainWindow::MainWindow(QWidget *parent)
  ui->labelmic->setWindowFlags(Qt::FramelessWindowHint);
 
 ui->labelmic->setMask((new QPixmap("C:/Users/MSI/Documents/semestre 1-2A/RADIO - Copie - Copie/IMG/MICGIF.gif")) ->mask());
-QMovie * movie1= new QMovie ("C:/Users/MSI/Documents/semestre 1-2A/RADIO - Copie - Copie/IMG/MICGIF.gif");
+QMovie * movie1= new QMovie ("C:/Users/MSI/Downloads/MICGIF.gif");
 ui->labelmic->setMovie(movie1);
 movie1->start();
 
