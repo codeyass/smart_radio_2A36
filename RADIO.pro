@@ -1,8 +1,8 @@
 QT       += sql
 QT       += core gui charts
 QT       += core gui multimedia multimediawidgets
-
-QT       += serialport
+QT       += core gui printsupport
+QT       +=serialport
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
@@ -23,17 +23,23 @@ SOURCES += \
     arduino.cpp \
     connection.cpp \
     dialog.cpp \
+    invites.cpp \
     main.cpp \
     mainwindow.cpp \
+    qrcode.cpp \
     secdialog.cpp \
+    smtp.cpp \
     sponsors.cpp
 
 HEADERS += \
     arduino.h \
     connection.h \
     dialog.h \
+    invites.h \
     mainwindow.h \
+    qrcode.hpp \
     secdialog.h \
+    smtp.h \
     sponsors.h
 
 FORMS += \

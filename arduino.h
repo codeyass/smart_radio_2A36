@@ -16,7 +16,7 @@ public:
     QString getarduino_port_name();
 
 private:
-    QSerialPort* Serial;
+    QSerialPort* serial;
     static const quint16 arduino_uno_vendor_id=9025;
     static const quint16 arduino_uno_producy_id=67;
     QString arduino_port_name;

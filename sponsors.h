@@ -40,9 +40,6 @@ int PERIODE;
 QString TYPE;
 QString NOM_P;
 
-
-
-
 };
 
 #endif // SPONSORS_H

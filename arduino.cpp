@@ -7,7 +7,7 @@ Arduino::Arduino()
     data="";
     arduino_port_name="";
     arduino_is_available=false;
-    Serial=new QSerialPort;
+    serial=new QSerialPort;
 
 }
 
@@ -30,13 +30,13 @@ int Arduino::connect_arduino()
     qDebug() << "arduino_port_name is: " <<arduino_port_name;
     if(arduino_is_available)
     {
-      Serial->setPortName(arduino_port_name);
-      if(Serial->open(QSerialPort::ReadWrite)){
-          Serial->setBaudRate(QSerialPort::Baud9600);
-          Serial->setDataBits(QSerialPort::Data8);
-          Serial->setParity(QSerialPort::NoParity);
-          Serial->setStopBits(QSerialPort::OneStop);
-          Serial->setFlowControl(QSerialPort::NoFlowControl);
+      serial->setPortName(arduino_port_name);
+      if(serial->open(QSerialPort::ReadWrite)){
+          serial->setBaudRate(QSerialPort::Baud9600);
+          serial->setDataBits(QSerialPort::Data8);
+          serial->setParity(QSerialPort::NoParity);
+          serial->setStopBits(QSerialPort::OneStop);
+          serial->setFlowControl(QSerialPort::NoFlowControl);
           return  0;
 
       }
@@ -49,8 +49,8 @@ int Arduino::connect_arduino()
 
 int Arduino::close_arduino()
 {
-    if(Serial->isOpen()){
-        Serial->close();
+    if(serial->isOpen()){
+        serial->close();
         return  0;
     }
     return  1;
@@ -59,8 +59,8 @@ int Arduino::close_arduino()
 
 QByteArray Arduino::read_from_arduino(){
 
-    if(Serial->isReadable()){
-        data=Serial->readAll();
+    if(serial->isReadable()){
+        data=serial->readAll();
 
     }
     return  data;
@@ -68,9 +68,9 @@ QByteArray Arduino::read_from_arduino(){
 
 int Arduino::write_to_arduino(QByteArray d)
 {
-    if(Serial->isWritable())
+    if(serial->isWritable())
     {
-        Serial->write(d);
+        serial->write(d);
     }
     else {
         qDebug() <<"couldn't write to serial! " ;
@@ -86,5 +86,5 @@ QString Arduino::getarduino_port_name()
 
 QSerialPort *Arduino::getserial()
 {
-   return Serial;
+   return serial;
 }
