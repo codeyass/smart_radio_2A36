@@ -23,7 +23,7 @@ public:
     ~Smtp();
 
     void sendMail( const QString &from, const QString &to,
-                   const QString &subject, const QString &body );
+                   const QString &subject, const QString &body);
 
 signals:
     void status( const QString &);

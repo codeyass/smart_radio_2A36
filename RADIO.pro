@@ -23,6 +23,7 @@ SOURCES += \
     arduino.cpp \
     connection.cpp \
     dialog.cpp \
+    emission.cpp \
     invites.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -35,6 +36,7 @@ HEADERS += \
     arduino.h \
     connection.h \
     dialog.h \
+    emission.h \
     invites.h \
     mainwindow.h \
     qrcode.hpp \

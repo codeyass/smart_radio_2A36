@@ -1,4 +1,15 @@
 #include "smtp.h"
+#include <QDialog>
+#include <QtNetwork/QAbstractSocket>
+#include <QtNetwork/QSslSocket>
+#include <QString>
+#include <QTextStream>
+#include <QDebug>
+#include <QtWidgets/QMessageBox>
+#include <QByteArray>
+#include <QFile>
+#include <QFileInfo>
+#include <QFileDialog>
 
 Smtp::Smtp( const QString &user, const QString &pass, const QString &host, int port, int timeout )
 {
@@ -34,7 +45,9 @@ void Smtp::sendMail(const QString &from, const QString &to, const QString &subje
     rcpt = to;
     state = Init;
     socket->connectToHostEncrypted(host, port); //"smtp.gmail.com" and 465 for gmail TLS
-    if (!socket->waitForConnected(timeout)) {
+
+    if (!socket->waitForConnected(timeout))
+    {
          qDebug() << socket->errorString();
      }
 
