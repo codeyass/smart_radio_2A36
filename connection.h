@@ -2,15 +2,14 @@
 #define CONNECTION_H
 #include <QSqlDatabase>
 
-
-class Connection
+class connection
 {
     QSqlDatabase db;
+
 public:
-    Connection();
-    bool ouvrirconnection();
-    void closeConnection();
+    connection();
+    bool createconnect();
+    void closeconnection();
 };
 
 #endif // CONNECTION_H
-
