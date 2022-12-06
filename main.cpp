@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     if(test)
     {
         w.show();
-qDebug()<<"connection mregla";
+qDebug()<<"connection etablie";
 
 }
 

@@ -58,3 +58,4 @@ void Secdialog::on_continuer_clicked()
      d.exec();
  hide();
 }
+
